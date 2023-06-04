@@ -124,6 +124,9 @@
     #hero-area .hero-content {
         max-width: 100%;
     }
+    #testimonial-area .review h4 {
+        font-size: 1.8em;
+    }
     #subscribe-area .subscribe-box form input[type="email"] {
         border-radius: 0;
         border-top-left-radius: .5em;
