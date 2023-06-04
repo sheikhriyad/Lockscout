@@ -148,6 +148,7 @@
         row-gap: 8em;
     }
     #footer-area .subscribe-box form input[type="email"] {
+        padding-right: 1em;
         border-radius: .5em;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
