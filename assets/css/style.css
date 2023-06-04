@@ -617,6 +617,20 @@ a.link:hover svg path {
     width: 100%;
     margin-top: 1em;
 }
+#footer-area .footer-company .social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 1.1em;
+    margin-top: 2.5em;
+}
+#footer-area .footer-company .social-media svg {
+    width: .9em;
+    height: .9em;
+    transition: all 0.4s ease-out 0s;
+}
+#footer-area .footer-company .social-media svg:hover {
+    transform: translateY(-.3em);
+}
 #footer-area .footer-menu h6,
 #footer-area .footer-subscribe h6 {
     color: var(--300-color);
@@ -689,23 +703,7 @@ a.link:hover svg path {
     margin-top: 4em;
     padding-top: 2em;
 }
-.footer-copyright .row {
-    grid-template: auto / repeat(2, auto) !important; 
-    justify-content: space-between;
-}
 .footer-copyright p {
     color: var(--850-color);
-}
-.footer-copyright .social-media {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-}
-.footer-copyright .social-media svg {
-    width: .9em;
-    height: .9em;
-    transition: all 0.4s ease-out 0s;
-}
-.footer-copyright .social-media svg:hover {
-    transform: translateY(-.3em);
+    text-align: center;
 }
