@@ -1,0 +1,197 @@
+/* Media Query for Large Device - 1140px */
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 1120px;
+    }
+    #hero-area .hero-content {
+        max-width: 488px;
+    }
+}
+
+/* Media Query for Medium Device - 991px */
+@media screen and (max-width: 991px) {
+    #haeder-area .row {
+        display: grid;
+        grid-template: auto / repeat(2, 1fr);
+        justify-content: space-between;
+        align-items: center;
+    }
+    #mobile-icon {
+        display: block;
+    }
+    .open {
+        transition: all 1s ease-out 0s;
+        display: block;
+        width: 100%;
+        left: 0;
+    }
+    nav#navigation,
+    #user {
+        display: none;
+    }
+
+    #hero-area {
+        height: 100%;
+        padding-bottom: 2.5em;
+    }
+    #hero-area .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 4em;
+    }
+    #hero-area .hero-content {
+        margin-top: 0;
+        max-width: 65.5em;
+    }
+    #hero-area .hero-content p {
+        margin-top: 0;
+        max-width: 80em;
+    }
+    .hero-img {
+        display: none;
+    }
+    .hero-img-responsive {
+        display: block;
+        text-align: right;
+        margin-right: -3em;
+    }
+
+    /* Row Area */
+    #message-area .row {
+        grid-template: auto / repeat(2, auto);
+    }
+    #product-area .row {
+        grid-template: auto / 1fr;
+        justify-items: center;
+    }
+    #blog-area .row {
+        grid-template: auto / repeat(2, auto);
+    }
+    #footer-area .row {
+        grid-template: auto / repeat(2, auto);
+    }
+    #product-area .product-left {
+        grid-area: 2 / 1;
+    }
+    #product-area .product-box {
+        grid-template: auto / repeat(2, auto);
+        justify-content: center;
+    }
+    #product-area .product-box p {
+        max-width: 100%;
+    }
+    #product-area2 .row {
+        grid-template: auto / 1fr;
+        justify-items: center;
+    }
+    #product-area2 .product-box {
+        grid-template: auto / repeat(2, auto);
+        justify-content: center;
+    }
+    #product-area2 .product-box p {
+        max-width: 100%;
+    }
+    #footer-area .row .footer-subscribe {
+        grid-area: 1 / 2;
+    }
+    #proud-area .proud-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3em;
+        align-items: center;
+    }
+    #proud-area .proud-box img {
+        max-width: 10em;
+        width: 100%;
+    }
+    #blog-area .blog-img img {
+        width: 100%;
+    }
+}
+
+/* Media Query for Small Device - 767px */
+@media screen and (max-width: 767px) {
+    .btn {
+        display: block;
+        text-align: center;
+    }
+    form {
+        max-width: 60em;
+        margin: 0 auto;
+    }
+    #hero-area .hero-content {
+        max-width: 100%;
+    }
+    #subscribe-area .subscribe-box form input[type="email"] {
+        border-radius: 0;
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5em;
+        border-right: 1px solid var(--500-color);
+        padding-right: 1em;
+    }
+    #subscribe-area .subscribe-box form .sub-btn {
+        padding: .6em 1.8em;
+        margin-left: 0;
+        max-width: 30em;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 0;
+        border-bottom-left-radius: .5em;
+        border-bottom-right-radius: .5em;
+    }
+    #footer-area .row {
+        row-gap: 8em;
+    }
+    #footer-area .subscribe-box form input[type="email"] {
+        border-radius: .5em;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    #footer-area .subscribe-box form .sub-btn {
+        right: inherit;
+        padding: 1em;
+        border-radius: 0;
+        border-bottom-right-radius: .5em;
+        border-bottom-left-radius: .5em;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Media Query for Extra Small Device - 575px */
+@media screen and (max-width: 575px) {
+    html {
+        font-size: 8px;
+    }
+    #hero-area .hero-content .hero-title {
+        font-size: 3.5em;
+    }
+    .follow {
+        margin-top: 5em;
+    }
+    .hero-img {
+        margin-right: 0;
+    }
+    .hero-img img {
+        right: auto;
+        margin-right: 0;
+        transform: translateY(8em);
+        width: 52.7em;
+    }
+    .hero-img svg {
+        left: 0;
+        width: 36.7em;
+        transform: translate(25%, -5%);
+    }
+    #message-area .row {
+        grid-template: auto / auto;
+    }
+    #blog-area .row {
+        grid-template: auto / auto;
+    }
+    #footer-area .subscribe-box form input[type="email"] {
+        display: block;
+    }
+}
